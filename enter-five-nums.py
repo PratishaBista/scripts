@@ -30,7 +30,11 @@ def guess_digits():
     print(f"Step 5 digits: {''.join(map(str, step5_digits))}")
 
 
-    final_sum = # final sum logic
+    # final sum logic
+    final_sum = int(''.join(map(str, step1_digits))) + int(''.join(map(str, step2_digits))) + \
+            int(''.join(map(str, step3_digits))) + int(''.join(map(str, step4_digits))) + \
+            int(''.join(map(str, step5_digits)))
+
     print(f"Final sum: {final_sum}")
 
     if final_sum == int(guessed_sum):
